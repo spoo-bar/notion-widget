@@ -26,21 +26,35 @@
             line-height: 1.6;
             color: rgba(255, 255, 255, 0.9);
         }
+
+        h3 {
+            margin-left :20px;
+        }
     </style>
 
 </head>
 
 <body>
-    <p>Theodore
-        <br />
-    In : Cair Paravel
+    <h3>theodore</h3>
+    <p>In : Cair Paravel
         <br />
     Feeling : <span id="dog-feeling"></span></p>
-    <img id="dog-gif" src="dog_front.png" width="300" />
+    <pre>
+        
+       _=,_
+    o_/6 /#\
+    \__ |##/
+     ='|--\
+       /   #'-.
+       \#|_   _'-. /
+        |/ \_( # |" 
+       C/ ,--___/
+    </pre>
+    <!-- <img id="dog-gif" src="dog_front.png" width="300" /> -->
     <script>
         var dogEmotions = ['Happy', 'Excited', 'Submissive', 'Anxious', 'Sleepy', 'Hungry', 'Relaxed', 'Pleased',
             'Curious', 'Stressed', 'Aggressive'];
-            dogEmotions = ['Happy', 'Excited', 'Sleepy', 'Hungry', 'Relaxed', 'Pleased', 'Curious'];
+            // dogEmotions = ['Happy', 'Excited', 'Sleepy', 'Hungry', 'Relaxed', 'Pleased', 'Curious'];
         var randomNumber = Math.floor(Math.random() * dogEmotions.length);
         document.getElementById("dog-feeling").textContent = dogEmotions[randomNumber];  
     </script>

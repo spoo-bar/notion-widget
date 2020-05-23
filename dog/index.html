@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Notion Widgets</title>
+    <style>
+        @font-face {
+            font-family: iawriter-mono;
+            src: url(iAWriterMonoS-Regular.woff);
+        }
+
+        body {
+            background-color: #2f3437;
+            font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+            color: whitesmoke;
+        }
+
+        #dog-gif {
+            margin-left: -50px;
+            margin-top: -60px;
+        }
+        
+        p {
+            margin-left :20px;
+            font-size: 14px;
+            letter-spacing: 0.055em;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Theodore
+        <br />
+    In : Cair Paravel
+        <br />
+    Feeling : <span id="dog-feeling"></span></p>
+    <img id="dog-gif" src="dog_front.png" width="300" />
+    <script>
+        var dogEmotions = ['Happy', 'Excited', 'Submissive', 'Anxious', 'Sleepy', 'Hungry', 'Relaxed', 'Pleased',
+            'Curious', 'Stressed', 'Aggressive'];
+            dogEmotions = ['Happy', 'Excited', 'Sleepy', 'Hungry', 'Relaxed', 'Pleased', 'Curious'];
+        var randomNumber = Math.floor(Math.random() * dogEmotions.length);
+        document.getElementById("dog-feeling").textContent = dogEmotions[randomNumber];  
+    </script>
+</body>
+
+</html>
